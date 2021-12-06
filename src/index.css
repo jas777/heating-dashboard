@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind screens;
+
+.heater-mode {
+    /*width: fit-content;*/
+}
+
+.heater-mode-info {
+    @apply flex h-20 font-bold text-white items-center pt-8 px-4 text-3xl;
+}
+
+body {
+    @apply overflow-x-hidden;
+}
