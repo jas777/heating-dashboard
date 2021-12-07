@@ -39,6 +39,9 @@ function App() {
         })
     }
 
+
+    //==============================|=======================>>
+
     return (
         <div className='flex flex-col overflow-hidden'>
             <h1 className='text-5xl m-6 font-bold text-indigo-600'>Sterownik ogrzewania</h1>
@@ -48,12 +51,12 @@ function App() {
             </div>
             <div className='mx-6 my-4 text-2xl font-semibold'>
                 <form action="">
-                    <label htmlFor='interval'>Grzejniki mają się włączać na</label>
-                    <input key={data?.interval} type="number" name='interval' id='interval' ref={intervalRef}
-                           defaultValue={(data?.interval ?? 0) / 1000 / 60}/>
-                    <label htmlFor="duration"> minut co </label>
+                    <label htmlFor='duration'>Grzejniki mają się włączać na</label>
                     <input key={data?.duration} type="number" name='duration' id='duration' ref={durationRef}
                            defaultValue={(data?.duration ?? 0) / 1000 / 60}/>
+                    <label htmlFor="interval"> minut co </label>
+                    <input key={data?.interval} type="number" name='interval' id='interval' ref={intervalRef}
+                           defaultValue={(data?.interval ?? 0) / 1000 / 60}/>
                     <span> minut</span>
                     <button
                         className='block bg-pink-600 text-white p-2 my-4 text-lg rounded-lg hover:bg-pink-700 transition-all duration-200'
