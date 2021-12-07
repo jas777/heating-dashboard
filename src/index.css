@@ -14,3 +14,8 @@
 body {
     @apply overflow-x-hidden;
 }
+
+input[type="number"] {
+    @apply border-b border-indigo-500 mx-2;
+    width: auto;
+}
