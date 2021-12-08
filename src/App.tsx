@@ -39,9 +39,6 @@ function App() {
         })
     }
 
-
-    //==============================|=======================>>
-
     return (
         <div className='flex flex-col overflow-hidden'>
             <h1 className='text-5xl m-6 font-bold text-indigo-600'>Sterownik ogrzewania</h1>
